@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "6b271812-e422-4951-a70f-c894700ebd7d",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "bundleName": "Scripts",
+    "bundleFilterConfig": [],
+    "compressionType": {},
+    "isRemoteBundle": {}
+  }
+}

@@ -15,12 +15,12 @@ export class PlayerCard extends Component {
     private data: PlayerCardData;
 
     protected start(): void {
-        tween(this.node.position).to(1, new Vec3(this.node.position.x, this.node.position.y + 100, this.node.position.z), {
-            easing: "bounceIn", onUpdate: (target: Vec3, ratio: number) => {
+        tween(this.node.position).to(1, new Vec3(this.node.position.x + 100, this.node.position.y, this.node.position.z), {
+            easing: "backIn", onUpdate: (target: Vec3, ratio: number) => {
                 this.node.position = target
             }
         }).to(1, new Vec3(this.node.position.x, this.node.position.y, this.node.position.z), {
-            easing: "bounceOut", onUpdate: (target: Vec3, ratio: number) => {
+            easing: "backOut", onUpdate: (target: Vec3, ratio: number) => {
                 this.node.position = target
             }
         }).union().repeatForever().start()

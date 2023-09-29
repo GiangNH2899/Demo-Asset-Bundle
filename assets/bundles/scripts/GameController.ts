@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Sprite } from 'cc';
+import { _decorator, Button, Component, game, Node, Sprite } from 'cc';
 import { EnemyCard } from './EnemyCard';
 const { ccclass, property } = _decorator;
 
@@ -9,8 +9,9 @@ export class GameController extends Component {
     })
     private enemyCardPrefab: Node
 
-    start() {
 
+    resetGame() {
+        game.restart()
     }
 }
 
